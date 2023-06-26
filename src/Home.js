@@ -1,12 +1,15 @@
 import Navbar from "./modules/navigation";
 import Hero from "./modules/Hero";
+import Second from "./modules/Second";
 
 function Home() {
   return (
     <div className="home">
       <Navbar />
       <Hero />
-      <p>
+      <Second />
+
+      <p className="filler">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae
         nulla volutpat eros pharetra mattis a quis leo. Donec id ultrices lacus.
         Vivamus maximus, mi ultrices vehicula venenatis, velit justo placerat
