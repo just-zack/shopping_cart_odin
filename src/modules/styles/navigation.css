@@ -6,6 +6,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 95%;
 }
 
 .nav--logo_text {
@@ -23,6 +26,7 @@
   font-family: "Anton", sans-serif;
   color: white;
   border: none;
+  background-color: transparent;
 }
 
 .nav--cart_container {
