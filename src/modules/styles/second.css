@@ -1,11 +1,15 @@
 /*second*/
 .second_container {
-  padding-top: 50px;
-  padding-bottom: 100px;
-  display: flex;
-  gap: 15px;
-  justify-content: space-evenly;
+  display: block;
+  justify-content: center;
   align-items: center;
+  width: 100vw;
+  padding: 50px;
+}
+
+.second--img_container {
+  display: flex;
+  gap: 20px;
   flex: auto;
 }
 
