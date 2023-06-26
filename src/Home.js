@@ -1,6 +1,6 @@
 import Navbar from "./modules/navigation";
 
-function App() {
+function Home() {
   return (
     <div className="App">
       <Navbar />
@@ -8,4 +8,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

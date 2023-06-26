@@ -1,0 +1,45 @@
+/*nav*/
+.nav_container {
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav--logo_text {
+  font-family: "Bungee Shade", cursive;
+  font-size: 4.5vw;
+}
+.nav--button_container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav--btn {
+  font-size: 3vw;
+  font-family: "Anton", sans-serif;
+  color: white;
+  border: none;
+}
+
+.nav--cart_container {
+  display: flex;
+  align-items: center;
+}
+
+.nav--cart_count_container {
+  background-color: white;
+  width: 3vw;
+  height: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.nav--cart_count {
+  font-size: 2vw;
+}
