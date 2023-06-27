@@ -17,6 +17,7 @@
 .shopSnip--text_content {
   display: flex;
   flex-direction: column;
+  padding-top: 50px;
 }
 
 .shopSnip--title {
@@ -33,8 +34,16 @@
   height: 7vh;
   width: 10vw;
   border: solid black 2px;
+  transition: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
+.shopSnip--shop_button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
+}
 .shopSnip--card_container {
   grid-column-start: 3;
   grid-column-end: 6;

@@ -1,0 +1,37 @@
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #b2afac;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  gap: 10px;
+  padding: 20px;
+  color: white;
+}
+
+a {
+  color: inherit;
+}
+
+.footer--logo {
+  width: 8vw;
+}
+
+.footer-githubIcon {
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  width: 30px;
+  height: 30px;
+}
+
+.footer-githubIcon:hover {
+  transform: rotate(360deg);
+}

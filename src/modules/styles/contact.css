@@ -1,0 +1,48 @@
+.contact_container {
+  padding: 50px;
+  display: flex;
+  background-color: #b2afac;
+  height: 75vh;
+  padding-top: 100px;
+}
+
+.contact--call_action {
+  font-size: 5.5vw;
+  width: 40vw;
+  font-family: "Anton";
+  letter-spacing: 0.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.contact--link_container {
+  padding-left: 100px;
+}
+
+.contact--description {
+  font-family: "Roboto";
+  font-size: 2rem;
+  color: white;
+  padding-top: 10px;
+}
+
+.contact--list {
+  list-style: none;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  color: white;
+  font-size: 1.75rem;
+  font-family: "Roboto";
+}
+
+.contact--mail {
+  padding: 20px 30px 20px 30px;
+  font-size: 1.75rem;
+  background-color: transparent;
+  color: white;
+  font-family: "Roboto";
+  border: solid white 2px;
+}
