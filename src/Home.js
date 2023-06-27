@@ -1,6 +1,7 @@
 import Navbar from "./modules/navigation";
 import Hero from "./modules/Hero";
 import Second from "./modules/Second";
+import ShopSnip from "./modules/Shop_snip";
 
 function Home() {
   return (
@@ -8,6 +9,7 @@ function Home() {
       <Navbar />
       <Hero />
       <Second />
+      <ShopSnip />
 
       <p className="filler">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae

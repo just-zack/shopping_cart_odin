@@ -1,0 +1,44 @@
+.shopSnip_container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 50px;
+  padding-top: 0px;
+  gap: 30px;
+}
+
+.shopSnip--left_container {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+}
+
+.shopSnip--text_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.shopSnip--title {
+  font-size: 5vw;
+  font-family: "Anton";
+}
+
+.shoSnip--description {
+  font-size: 3vw;
+}
+
+.shopSnip--shop_button {
+  font-size: 1.5vw;
+  height: 7vh;
+  width: 10vw;
+  border: solid black 2px;
+}
+
+.shopSnip--card_container {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
