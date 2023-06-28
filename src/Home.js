@@ -8,9 +8,7 @@ import Footer from "./modules/footer";
 import Contact from "./modules/Contact";
 import Modal from "./modules/modal";
 
-function Home() {
-  const [openModal, setOpenModal] = useState(false);
-  const [color, setColor] = useState(false);
+function Home({ openModal, setOpenModal, color, setColor }) {
   return (
     <div className="home">
       <Navbar
