@@ -13,7 +13,12 @@ function Home() {
   const [color, setColor] = useState(false);
   return (
     <div className="home">
-      <Navbar setOpenModal={setOpenModal} color={color} setColor={setColor} />
+      <Navbar
+        openModal={openModal}
+        setOpenModal={setOpenModal}
+        color={color}
+        setColor={setColor}
+      />
       <Hero />
       <Second />
       <ShopSnip />

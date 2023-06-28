@@ -1,8 +1,8 @@
 import "./styles/navigation.css";
 import React, { useState } from "react";
 
-export default function Navbar({ setOpenModal, color, setColor }) {
-  //const [color, setColor] = useState(false);
+export default function Navbar({ openModal, setOpenModal, color, setColor }) {
+  //navbar color change
   const changeNavbarColor = () => {
     if (window.scrollY >= 300) {
       setColor(true);
@@ -11,6 +11,18 @@ export default function Navbar({ setOpenModal, color, setColor }) {
     }
   };
   window.addEventListener("scroll", changeNavbarColor);
+
+  //shopping cart open/close modal
+  function cartModalChange() {
+    if (openModal) {
+      setOpenModal(false);
+      setColor(false);
+    } else {
+      setOpenModal(true);
+      setColor(true);
+    }
+  }
+
   return (
     <div className={color ? "nav_container nav-bg" : "nav_container"}>
       <h1 className="nav--logo_text">NPC</h1>
@@ -20,8 +32,7 @@ export default function Navbar({ setOpenModal, color, setColor }) {
         <div
           className="nav--cart_container"
           onClick={() => {
-            setOpenModal(true);
-            setColor(true);
+            cartModalChange();
           }}
         >
           <svg
