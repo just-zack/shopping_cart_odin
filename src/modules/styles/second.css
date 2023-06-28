@@ -1,6 +1,6 @@
 /*second*/
 .second_container {
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -9,6 +9,7 @@
 
 .second--img_container {
   display: flex;
+  justify-content: center;
   gap: 20px;
   flex: auto;
 }
