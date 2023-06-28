@@ -25,6 +25,16 @@ export default function Modal({ setOpenModal, setColor }) {
           <div className="cart--card_container">
             <CartCard />
             <CartCard />
+            <CartCard />
+            <CartCard />
+            <CartCard />
+            <CartCard />
+            <CartCard />
+            <CartCard />
+            <CartCard />
+            <CartCard />
+            <CartCard />
+            <CartCard />
           </div>
           <button className="checkout">CHECKOUT</button>
         </div>

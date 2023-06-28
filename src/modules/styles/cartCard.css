@@ -1,0 +1,43 @@
+.cart--card {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  gap: 30px;
+}
+
+.cart--card_img {
+  height: 150px;
+}
+
+.cart--card_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.card_title {
+  font-family: "Anton";
+  font-size: 2rem;
+}
+
+.card_price {
+  font-family: "Roboto";
+  font-size: 1.5rem;
+}
+
+.quantity_container {
+  display: flex;
+  gap: 10px;
+}
+
+.cart_quantity {
+  font-size: 1.2rem;
+  background-color: black;
+  color: white;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  border: none;
+}
