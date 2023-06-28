@@ -24,7 +24,13 @@ function Home() {
       <ShopSnip />
       <Contact />
       <Footer />
-      {openModal && <Modal setOpenModal={setOpenModal} setColor={setColor} />}
+      {openModal && (
+        <Modal
+          openModal={openModal}
+          setOpenModal={setOpenModal}
+          setColor={setColor}
+        />
+      )}
     </div>
   );
 }

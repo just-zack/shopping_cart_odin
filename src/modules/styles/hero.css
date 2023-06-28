@@ -1,7 +1,7 @@
 /*hero*/
 .hero_container {
-  width: 100vw;
   height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -15,7 +15,6 @@
 .hero--text_container {
   padding-bottom: 15vh;
   padding-left: 5vw;
-  width: auto;
   overflow: hidden;
 }
 .hero--text1,
