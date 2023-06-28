@@ -1,5 +1,6 @@
 import "./styles/navigation.css";
-import React, { useState } from "react";
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function NavbarStatic({
   openModal,
@@ -18,12 +19,31 @@ export default function NavbarStatic({
     }
   }
 
+  //navigte to Shop
+  let navigate = useNavigate();
+  const routeChangeShop = () => {
+    let path = `/shop`;
+    navigate(path);
+  };
+
+  //navigate to home
+  const routeChangeHome = () => {
+    let path = `/`;
+    navigate(path);
+  };
+
   return (
     <div className="nav_container nav-bg">
-      <h1 className="nav--logo_text">NPC</h1>
+      <h1 className="nav--logo_text" onClick={routeChangeHome}>
+        NPC
+      </h1>
       <div className="nav--button_container">
-        <button className="nav--home_btn nav--btn">HOME</button>
-        <button className="nav--shop_btn nav--btn">SHOP</button>
+        <button className="nav--home_btn nav--btn" onClick={routeChangeHome}>
+          HOME
+        </button>
+        <button className="nav--shop_btn nav--btn" onClick={routeChangeShop}>
+          SHOP
+        </button>
         <div
           className="nav--cart_container"
           onClick={() => {
