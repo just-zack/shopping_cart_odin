@@ -1,8 +1,8 @@
 import "./styles/navigation.css";
 import React, { useState } from "react";
 
-export default function Navbar({ setOpenModal }) {
-  const [color, setColor] = useState(false);
+export default function Navbar({ setOpenModal, color, setColor }) {
+  //const [color, setColor] = useState(false);
   const changeNavbarColor = () => {
     if (window.scrollY >= 300) {
       setColor(true);
@@ -17,7 +17,13 @@ export default function Navbar({ setOpenModal }) {
       <div className="nav--button_container">
         <button className="nav--home_btn nav--btn">HOME</button>
         <button className="nav--shop_btn nav--btn">SHOP</button>
-        <div className="nav--cart_container" onClick={() => setOpenModal(true)}>
+        <div
+          className="nav--cart_container"
+          onClick={() => {
+            setOpenModal(true);
+            setColor(true);
+          }}
+        >
           <svg
             className="nav--shopping_icon"
             width="5vw"

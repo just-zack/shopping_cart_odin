@@ -1,0 +1,13 @@
+.cart_bg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 90px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cart_container {
+  background-color: white;
+  padding: 30px;
+}

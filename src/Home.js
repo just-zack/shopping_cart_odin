@@ -10,15 +10,16 @@ import Modal from "./modules/modal";
 
 function Home() {
   const [openModal, setOpenModal] = useState(false);
+  const [color, setColor] = useState(false);
   return (
     <div className="home">
-      <Navbar setOpenModal={setOpenModal} />
+      <Navbar setOpenModal={setOpenModal} color={color} setColor={setColor} />
       <Hero />
       <Second />
       <ShopSnip />
       <Contact />
       <Footer />
-      {openModal && <Modal />}
+      {openModal && <Modal setOpenModal={setOpenModal} setColor={setColor} />}
     </div>
   );
 }
