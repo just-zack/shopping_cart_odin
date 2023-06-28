@@ -38,6 +38,10 @@
   font-family: "Roboto";
 }
 
+li {
+  padding-bottom: 5px;
+}
+
 .contact--mail {
   padding: 20px 30px 20px 30px;
   font-size: 1.75rem;
@@ -45,4 +49,11 @@
   color: white;
   font-family: "Roboto";
   border: solid white 2px;
+  transition: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+.contact--mail:hover {
+  transform: scale(1.1);
 }

@@ -1,8 +1,18 @@
 import "./styles/navigation.css";
+import React, { useState } from "react";
 
 export default function Navbar() {
+  const [color, setColor] = useState(false);
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 300) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
+  window.addEventListener("scroll", changeNavbarColor);
   return (
-    <div className="nav_container">
+    <div className={color ? "nav_container nav-bg" : "nav_container"}>
       <h1 className="nav--logo_text">NPC</h1>
       <div className="nav--button_container">
         <button className="nav--home_btn nav--btn">HOME</button>
