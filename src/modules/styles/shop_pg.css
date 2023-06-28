@@ -1,0 +1,43 @@
+.shop--container {
+  padding-top: 90px;
+  width: 100%;
+}
+
+.shop-text_container {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.shop--title_container {
+  overflow: hidden;
+}
+
+.shop--title {
+  font-family: "Bungee Shade";
+  font-size: 5rem;
+  display: block;
+  animation: riseUp 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@keyframes riseUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.shop--description {
+  font-family: "Roboto";
+  font-size: 1.5rem;
+}
+
+.shop--card_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}

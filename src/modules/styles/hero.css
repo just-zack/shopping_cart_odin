@@ -30,7 +30,7 @@
   font-size: 8vw;
   letter-spacing: 0.1rem;
   display: block;
-  animation: riseUp 2.5s cubic-bezier(0.77, 0, 0.175, 1);
+  animation: riseUp 1.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 @keyframes riseUp {
