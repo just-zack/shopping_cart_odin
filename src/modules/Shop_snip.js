@@ -15,9 +15,6 @@ export default function ShopSnip() {
       </div>
       <div className="shopSnip--card_container">
         <ItemCard />
-        <ItemCard />
-        <ItemCard />
-        <ItemCard />
       </div>
     </div>
   );

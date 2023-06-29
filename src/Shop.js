@@ -23,20 +23,7 @@ export default function Shop({ openModal, setOpenModal, color, setColor }) {
           </div>
           <h3 className="shop--description">JOIN THE NPC REVOLUTION</h3>
         </div>
-        <div className="shop--card_container">
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-          <ItemCard />
-        </div>
+        <ItemCard />
       </div>
       <Footer />
       {openModal && (
