@@ -17,20 +17,20 @@ const RouteSwitch = () => {
   const [openModal, setOpenModal] = useState(false);
   const [color, setColor] = useState(false);
   const [cartArray, setCartArray] = useState([
-    { id: 0, item: "RWB 5-panel", price: "$65.00", img: rwb_hat, quantity: 0 },
+    { id: 0, item: "RWB 5-panel", price: "65.00", img: rwb_hat, quantity: 1 },
     {
       id: 1,
       item: "Green 5-panel",
-      price: "$65.00",
+      price: "65.00",
       img: green_hat,
       quantity: 2,
     },
     {
       id: 2,
       item: "Insulated 5-panel",
-      price: "$65.00",
+      price: "65.00",
       img: ins_hat,
-      quantity: 0,
+      quantity: 1,
     },
   ]);
 

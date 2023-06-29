@@ -23,6 +23,7 @@ function Home({
         setOpenModal={setOpenModal}
         color={color}
         setColor={setColor}
+        cartArray={cartArray}
       />
       <Hero />
       <Second />

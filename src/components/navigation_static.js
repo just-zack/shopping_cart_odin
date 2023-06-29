@@ -7,6 +7,7 @@ export default function NavbarStatic({
   setOpenModal,
   color,
   setColor,
+  cartArray,
 }) {
   //shopping cart open/close modal
   function cartModalChange() {
@@ -32,6 +33,17 @@ export default function NavbarStatic({
     navigate(path);
     setOpenModal(false);
     setColor(false);
+  };
+
+  //sum cart quantity
+  const sumCartQuantity = () => {
+    if (cartArray.length > 0) {
+      let sum = 0;
+      for (let i = 0; i < cartArray.length; i++) {
+        sum += cartArray[i].quantity;
+      }
+      return sum;
+    } else return 0;
   };
 
   return (
@@ -77,7 +89,7 @@ export default function NavbarStatic({
             </g>
           </svg>
           <div className="nav--cart_count_container">
-            <h2 className="nav--cart_count">3</h2>
+            <h2 className="nav--cart_count">{sumCartQuantity()}</h2>
           </div>
         </div>
       </div>

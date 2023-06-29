@@ -12,7 +12,7 @@ export default function CartCard({ cartArray }) {
           ></img>
           <div className="cart--card_info">
             <h2 className="card_title">{cartArray.item}</h2>
-            <h4 className="card_price">{cartArray.price}</h4>
+            <h4 className="card_price">${cartArray.price}</h4>
             <div className="quantity_container">
               <button className="remove cart_quantity">-</button>
               <button className="quantity cart_quantity">

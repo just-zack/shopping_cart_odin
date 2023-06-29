@@ -22,6 +22,7 @@ export default function Shop({
         setOpenModal={setOpenModal}
         color={color}
         setColor={setColor}
+        cartArray={cartArray}
       />
       <div className="shop--container">
         <div className="shop-text_container">
