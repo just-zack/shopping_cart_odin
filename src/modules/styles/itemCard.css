@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 25vw;
+  width: 300px;
   padding-top: 10px;
   flex-wrap: wrap;
 }
@@ -19,7 +19,7 @@
   gap: 1.5vw;
 }
 .item_img {
-  width: 25vw;
+  width: 300px;
 }
 
 .item_name {

@@ -52,8 +52,6 @@ export default function NavbarStatic({
         >
           <svg
             className="nav--shopping_icon"
-            width="5vw"
-            height="5vw"
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
