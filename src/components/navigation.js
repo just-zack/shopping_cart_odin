@@ -44,7 +44,6 @@ export default function Navbar({
     let path = `/`;
     navigate(path);
     setOpenModal(false);
-    setColor(false);
   };
 
   //sum cart quantity
