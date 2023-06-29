@@ -14,6 +14,8 @@ export default function Shop({
   setColor,
   cartArray,
   setCartArray,
+  page,
+  setPage,
 }) {
   return (
     <div className="shopPG_container">
@@ -23,6 +25,7 @@ export default function Shop({
         color={color}
         setColor={setColor}
         cartArray={cartArray}
+        setPage={setPage}
       />
       <div className="shop--container">
         <div className="shop-text_container">
@@ -32,7 +35,11 @@ export default function Shop({
           <h3 className="shop--description">JOIN THE NPC REVOLUTION</h3>
         </div>
         <div className="shop--card_container">
-          <ItemCard cartArray={cartArray} setCartArray={setCartArray} />
+          <ItemCard
+            cartArray={cartArray}
+            setCartArray={setCartArray}
+            page={page}
+          />
         </div>
       </div>
       <Footer />

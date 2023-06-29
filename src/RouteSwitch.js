@@ -17,6 +17,7 @@ const RouteSwitch = () => {
   const [openModal, setOpenModal] = useState(false);
   const [color, setColor] = useState(false);
   const [cartArray, setCartArray] = useState([]);
+  const [page, setPage] = useState("home");
 
   return (
     <div className="router">
@@ -32,6 +33,8 @@ const RouteSwitch = () => {
                 setColor={setColor}
                 cartArray={cartArray}
                 setCartArray={setCartArray}
+                page={page}
+                setPage={setPage}
               />
             }
           />
@@ -45,6 +48,8 @@ const RouteSwitch = () => {
                 setColor={setColor}
                 cartArray={cartArray}
                 setCartArray={setCartArray}
+                page={page}
+                setPage={setPage}
               />
             }
           />

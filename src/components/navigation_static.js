@@ -8,6 +8,7 @@ export default function NavbarStatic({
   color,
   setColor,
   cartArray,
+  setPage,
 }) {
   //shopping cart open/close modal
   function cartModalChange() {
@@ -25,6 +26,7 @@ export default function NavbarStatic({
   const routeChangeShop = () => {
     let path = `/shop`;
     navigate(path);
+    setPage("shop");
   };
 
   //navigate to home
@@ -33,6 +35,7 @@ export default function NavbarStatic({
     navigate(path);
     setOpenModal(false);
     setColor(false);
+    setPage("home");
   };
 
   //sum cart quantity

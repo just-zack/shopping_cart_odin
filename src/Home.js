@@ -15,6 +15,8 @@ function Home({
   setColor,
   cartArray,
   setCartArray,
+  page,
+  setPage,
 }) {
   return (
     <div className="home">
@@ -24,10 +26,20 @@ function Home({
         color={color}
         setColor={setColor}
         cartArray={cartArray}
+        setPage={setPage}
       />
       <Hero />
       <Second />
-      <ShopSnip cartArray={cartArray} setCartArray={setCartArray} />
+      <ShopSnip
+        openModal={openModal}
+        setOpenModal={setOpenModal}
+        color={color}
+        setColor={setColor}
+        cartArray={cartArray}
+        setCartArray={setCartArray}
+        page={page}
+        setPage={setPage}
+      />
       <Contact />
       <Footer />
       {openModal && (

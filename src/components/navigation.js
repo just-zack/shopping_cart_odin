@@ -8,6 +8,7 @@ export default function Navbar({
   color,
   setColor,
   cartArray,
+  setPage,
 }) {
   //navbar color change
   const changeNavbarColor = () => {
@@ -37,6 +38,7 @@ export default function Navbar({
     navigate(path);
     setColor(true);
     setOpenModal(false);
+    setPage("shop");
   };
 
   //navigate to home
@@ -44,6 +46,7 @@ export default function Navbar({
     let path = `/`;
     navigate(path);
     setOpenModal(false);
+    setPage("home");
   };
 
   //sum cart quantity
