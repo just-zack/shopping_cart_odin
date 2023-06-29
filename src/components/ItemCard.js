@@ -58,7 +58,7 @@ export default function ItemCard({ cartArray, setCartArray }) {
       });
     }
 
-    //helper function for increasing/decreasing quantities for existing items in cart
+    //helper function for increasing quantities for existing items in cart
     function increaseQuantity() {
       let tempArray = cartArray;
       let tempObj;
@@ -70,6 +70,29 @@ export default function ItemCard({ cartArray, setCartArray }) {
           setCartArray((tempArray) => {
             return [...tempArray, tempObj];
           });
+        }
+      }
+    }
+
+    //helper function for decreasing quantities for existing items in cart
+    function decreaseQuantity() {
+      let tempArray = cartArray;
+      let tempObj;
+      for (let i = 0; i < cartArray.length; i++) {
+        if (cartArray[i].id === shopObject.id) {
+          if (cartArray[i].quantity > 1) {
+            tempObj = cartArray[i];
+            tempArray.splice(i, 1);
+            tempObj.quantity -= 1;
+            setCartArray((tempArray) => {
+              return [...tempArray, tempObj];
+            });
+          } else {
+            tempArray.splice(i, 1);
+            setCartArray((tempArray) => {
+              return [...tempArray];
+            });
+          }
         }
       }
     }
@@ -86,7 +109,12 @@ export default function ItemCard({ cartArray, setCartArray }) {
         if (cartArray[i].id === shopObject.id) {
           return (
             <div className="quantity_container">
-              <button className="remove cart_quantity">-</button>
+              <button
+                className="remove cart_quantity"
+                onClick={decreaseQuantity}
+              >
+                -
+              </button>
               <button className="quantity cart_quantity">
                 {cartArray[i].quantity}
               </button>
