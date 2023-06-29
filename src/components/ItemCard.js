@@ -65,10 +65,10 @@ export default function ItemCard({ cartArray, setCartArray }) {
       for (let i = 0; i < cartArray.length; i++) {
         if (cartArray[i].id === shopObject.id) {
           tempObj = cartArray[i];
-          tempArray.splice(i, 1);
           tempObj.quantity += 1;
+          tempArray.splice(i, 1, tempObj);
           setCartArray((tempArray) => {
-            return [...tempArray, tempObj];
+            return [...tempArray];
           });
         }
       }
@@ -82,10 +82,10 @@ export default function ItemCard({ cartArray, setCartArray }) {
         if (cartArray[i].id === shopObject.id) {
           if (cartArray[i].quantity > 1) {
             tempObj = cartArray[i];
-            tempArray.splice(i, 1);
             tempObj.quantity -= 1;
+            tempArray.splice(i, 1, tempObj);
             setCartArray((tempArray) => {
-              return [...tempArray, tempObj];
+              return [...tempArray];
             });
           } else {
             tempArray.splice(i, 1);

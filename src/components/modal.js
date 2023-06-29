@@ -37,7 +37,7 @@ export default function Modal({
           </div>
           <div className="cart--title">YOUR SHOPPING CART</div>
           <div className="cart--card_container">
-            <CartCard cartArray={cartArray} />
+            <CartCard cartArray={cartArray} setCartArray={setCartArray} />
           </div>
           <SumCartTotal />
           <button className="checkout">CHECKOUT</button>
