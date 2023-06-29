@@ -32,7 +32,7 @@ export default function Shop({
           <h3 className="shop--description">JOIN THE NPC REVOLUTION</h3>
         </div>
         <div className="shop--card_container">
-          <ItemCard />
+          <ItemCard cartArray={cartArray} />
         </div>
       </div>
       <Footer />

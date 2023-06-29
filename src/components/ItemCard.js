@@ -8,7 +8,7 @@ import blk_ls from "../img/apparel_img/5.png";
 import red_ss from "../img/apparel_img/6.png";
 import white_ss from "../img/apparel_img/7.png";
 
-export default function ItemCard() {
+export default function ItemCard({ cartArray }) {
   const shopArray = [
     { id: 0, item: "RWB 5-panel", price: "65.00", img: rwb_hat },
     { id: 1, item: "Green 5-panel", price: "65.00", img: green_hat },
@@ -18,6 +18,29 @@ export default function ItemCard() {
     { id: 5, item: "Red Short Sleeve", price: "32.00", img: red_ss },
     { id: 6, item: "White Short Sleeve", price: "32.00", img: white_ss },
   ];
+
+  //function to switch between buttons
+  function switchCartButtons(shopArray) {
+    if (cartArray.length === 0) {
+      return <button className="add_cart">ADD TO CART</button>;
+    } else {
+      let variable;
+      for (let i = 0; i < cartArray.length; i++) {
+        if (cartArray[i].id === shopArray.id) {
+          return (
+            <div className="quantity_container">
+              <button className="remove cart_quantity">-</button>
+              <button className="quantity cart_quantity">
+                {cartArray[i].quantity}
+              </button>
+              <button className="add cart_quantity">+</button>
+            </div>
+          );
+        } else variable = <button className="add_cart">ADD TO CART</button>;
+      }
+      return variable;
+    }
+  }
 
   function createItemCards() {
     return shopArray.map((shopArray) => {
@@ -33,7 +56,7 @@ export default function ItemCard() {
               <h3 className="item_name">{shopArray.item}</h3>
               <p className="item_price">${shopArray.price}</p>
             </div>
-            <button className="add_cart">ADD TO CART</button>
+            {switchCartButtons(shopArray)}
           </div>
         </div>
       );

@@ -1,7 +1,7 @@
 import "./styles/shop_snip.css";
 import ItemCard from "./ItemCard";
 
-export default function ShopSnip() {
+export default function ShopSnip({ cartArray }) {
   return (
     <div className="shopSnip_container">
       <div className="shopSnip--left_container">
@@ -14,7 +14,7 @@ export default function ShopSnip() {
         <button className="shopSnip--shop_button">Show All</button>
       </div>
       <div className="shopSnip--card_container">
-        <ItemCard />
+        <ItemCard cartArray={cartArray} />
       </div>
     </div>
   );
