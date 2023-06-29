@@ -1,4 +1,3 @@
-import testImg from "../img/shop_card_demo_img.png";
 import "./styles/itemCard.css";
 
 import rwb_hat from "../img/apparel_img/1.png";
