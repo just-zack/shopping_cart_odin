@@ -4,7 +4,12 @@ import CartCard from "./CartCard";
 import "./styles/modal.css";
 import ModalBG from "./modalBG";
 
-export default function Modal({ setOpenModal, setColor }) {
+export default function Modal({
+  setOpenModal,
+  setColor,
+  cartArray,
+  setCartArray,
+}) {
   return (
     <>
       <ModalBG />
@@ -23,18 +28,7 @@ export default function Modal({ setOpenModal, setColor }) {
           </div>
           <div className="cart--title">YOUR SHOPPING CART</div>
           <div className="cart--card_container">
-            <CartCard />
-            <CartCard />
-            <CartCard />
-            <CartCard />
-            <CartCard />
-            <CartCard />
-            <CartCard />
-            <CartCard />
-            <CartCard />
-            <CartCard />
-            <CartCard />
-            <CartCard />
+            <CartCard cartArray={cartArray} />
           </div>
           <button className="checkout">CHECKOUT</button>
         </div>

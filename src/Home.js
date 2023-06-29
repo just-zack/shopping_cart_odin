@@ -8,7 +8,14 @@ import Footer from "./modules/footer";
 import Contact from "./modules/Contact";
 import Modal from "./modules/modal";
 
-function Home({ openModal, setOpenModal, color, setColor }) {
+function Home({
+  openModal,
+  setOpenModal,
+  color,
+  setColor,
+  cartArray,
+  setCartArray,
+}) {
   return (
     <div className="home">
       <Navbar
@@ -27,6 +34,8 @@ function Home({ openModal, setOpenModal, color, setColor }) {
           openModal={openModal}
           setOpenModal={setOpenModal}
           setColor={setColor}
+          cartArray={cartArray}
+          setCartArray={setCartArray}
         />
       )}
     </div>

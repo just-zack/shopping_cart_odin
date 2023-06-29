@@ -7,7 +7,14 @@ import ItemCard from "./modules/ItemCard";
 
 import "./modules/styles/shop_pg.css";
 
-export default function Shop({ openModal, setOpenModal, color, setColor }) {
+export default function Shop({
+  openModal,
+  setOpenModal,
+  color,
+  setColor,
+  cartArray,
+  setCartArray,
+}) {
   return (
     <div className="shopPG_container">
       <NavbarStatic
@@ -31,6 +38,8 @@ export default function Shop({ openModal, setOpenModal, color, setColor }) {
           openModal={openModal}
           setOpenModal={setOpenModal}
           setColor={setColor}
+          cartArray={cartArray}
+          setCartArray={setCartArray}
         />
       )}
     </div>
