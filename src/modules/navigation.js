@@ -39,9 +39,9 @@ export default function Navbar({ openModal, setOpenModal, color, setColor }) {
 
   return (
     <div className={color ? "nav_container nav-bg" : "nav_container"}>
-      <h1 className="nav--logo_text" onClick={routeChangeHome}>
+      <button className="nav--logo_text" onClick={routeChangeHome}>
         NPC
-      </h1>
+      </button>
       <div className="nav--button_container">
         <button className="nav--home_btn nav--btn" onClick={routeChangeHome}>
           HOME

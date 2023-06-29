@@ -34,9 +34,9 @@ export default function NavbarStatic({
 
   return (
     <div className="nav_container nav-bg">
-      <h1 className="nav--logo_text" onClick={routeChangeHome}>
+      <button className="nav--logo_text" onClick={routeChangeHome}>
         NPC
-      </h1>
+      </button>
       <div className="nav--button_container">
         <button className="nav--home_btn nav--btn" onClick={routeChangeHome}>
           HOME

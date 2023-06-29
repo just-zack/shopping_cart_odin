@@ -23,6 +23,8 @@
   font-family: "Bungee Shade", cursive;
   font-size: 3rem;
   padding-left: 30px;
+  background-color: transparent;
+  border: none;
 }
 .nav--button_container {
   display: flex;
