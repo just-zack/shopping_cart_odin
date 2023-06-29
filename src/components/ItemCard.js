@@ -40,5 +40,5 @@ export default function ItemCard() {
       );
     });
   }
-  return <div className="card_container">{createItemCards()}</div>;
+  return createItemCards();
 }

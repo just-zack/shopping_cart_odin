@@ -1,6 +1,6 @@
 import logo from "../img/NPC_logo_filled.png";
 import github from "../img/github.png";
-import "../modules/styles/footer.css";
+import "./styles/footer.css";
 
 export default function Footer() {
   const d = new Date();

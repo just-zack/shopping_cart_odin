@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./Home";
 import Shop from "./Shop";
 
@@ -63,6 +65,7 @@ const RouteSwitch = () => {
             }
           />
         </Routes>
+        <ScrollToTop />
       </BrowserRouter>
     </div>
   );

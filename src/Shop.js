@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-import NavbarStatic from "./modules/navigation_static";
-import Footer from "./modules/footer";
-import Modal from "./modules/modal";
-import ItemCard from "./modules/ItemCard";
+import NavbarStatic from "./components/navigation_static";
+import Footer from "./components/footer";
+import Modal from "./components/modal";
+import ItemCard from "./components/ItemCard";
 
-import "./modules/styles/shop_pg.css";
+import "./components/styles/shop_pg.css";
 
 export default function Shop({
   openModal,
@@ -30,7 +30,9 @@ export default function Shop({
           </div>
           <h3 className="shop--description">JOIN THE NPC REVOLUTION</h3>
         </div>
-        <ItemCard />
+        <div className="shop--card_container">
+          <ItemCard />
+        </div>
       </div>
       <Footer />
       {openModal && (

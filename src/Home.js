@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
-import Navbar from "./modules/navigation";
-import Hero from "./modules/Hero";
-import Second from "./modules/Second";
-import ShopSnip from "./modules/Shop_snip";
-import Footer from "./modules/footer";
-import Contact from "./modules/Contact";
-import Modal from "./modules/modal";
+import Navbar from "./components/navigation";
+import Hero from "./components/Hero";
+import Second from "./components/Second";
+import ShopSnip from "./components/Shop_snip";
+import Footer from "./components/footer";
+import Contact from "./components/Contact";
+import Modal from "./components/modal";
 
 function Home({
   openModal,
