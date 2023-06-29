@@ -49,48 +49,55 @@ export default function ItemCard({ cartArray, setCartArray }) {
     },
   ];
 
-  //function to switch between buttons
-  function switchCartButtons(shopArray) {
-    // function helperCartObject() {
-    //   let obj = {id: sho}
-    // }
+  //function to switch between buttons layouts depending on if item is in cart and add onclick for adding to cartArray
+  function switchCartButtons(shopObject) {
+    //helper function for adding new item to cart
+    function addToCart() {
+      setCartArray((cartArray) => {
+        return [...cartArray, shopObject];
+      });
+    }
+
+    //helper function for increasing/decreasing quantities for existing items in cart
+    function increaseQuantity() {
+      let tempArray = cartArray;
+      let tempObj;
+      for (let i = 0; i < cartArray.length; i++) {
+        if (cartArray[i].id === shopObject.id) {
+          tempObj = cartArray[i];
+          tempArray.splice(i, 1);
+          tempObj.quantity += 1;
+          setCartArray((tempArray) => {
+            return [...tempArray, tempObj];
+          });
+        }
+      }
+    }
 
     if (cartArray.length === 0) {
       return (
-        <button
-          className="add_cart"
-          onClick={() => {
-            setCartArray((cartArray) => {
-              return [...cartArray, shopArray];
-            });
-          }}
-        >
+        <button className="add_cart" onClick={addToCart}>
           ADD TO CART
         </button>
       );
     } else {
       let variable;
       for (let i = 0; i < cartArray.length; i++) {
-        if (cartArray[i].id === shopArray.id) {
+        if (cartArray[i].id === shopObject.id) {
           return (
             <div className="quantity_container">
               <button className="remove cart_quantity">-</button>
               <button className="quantity cart_quantity">
                 {cartArray[i].quantity}
               </button>
-              <button className="add cart_quantity">+</button>
+              <button className="add cart_quantity" onClick={increaseQuantity}>
+                +
+              </button>
             </div>
           );
         } else
           variable = (
-            <button
-              className="add_cart"
-              onClick={() => {
-                setCartArray((cartArray) => {
-                  return [...cartArray, shopArray];
-                });
-              }}
-            >
+            <button className="add_cart" onClick={addToCart}>
               ADD TO CART
             </button>
           );

@@ -16,23 +16,7 @@ import white_ss from "./img/apparel_img/7.png";
 const RouteSwitch = () => {
   const [openModal, setOpenModal] = useState(false);
   const [color, setColor] = useState(false);
-  const [cartArray, setCartArray] = useState([
-    { id: 0, item: "RWB 5-panel", price: "65.00", img: rwb_hat, quantity: 2 },
-    {
-      id: 1,
-      item: "Green 5-panel",
-      price: "65.00",
-      img: green_hat,
-      quantity: 2,
-    },
-    {
-      id: 2,
-      item: "Insulated 5-panel",
-      price: "65.00",
-      img: ins_hat,
-      quantity: 1,
-    },
-  ]);
+  const [cartArray, setCartArray] = useState([]);
 
   return (
     <div className="router">
