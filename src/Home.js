@@ -27,7 +27,7 @@ function Home({
       />
       <Hero />
       <Second />
-      <ShopSnip cartArray={cartArray} />
+      <ShopSnip cartArray={cartArray} setCartArray={setCartArray} />
       <Contact />
       <Footer />
       {openModal && (

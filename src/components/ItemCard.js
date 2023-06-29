@@ -8,21 +8,66 @@ import blk_ls from "../img/apparel_img/5.png";
 import red_ss from "../img/apparel_img/6.png";
 import white_ss from "../img/apparel_img/7.png";
 
-export default function ItemCard({ cartArray }) {
+export default function ItemCard({ cartArray, setCartArray }) {
   const shopArray = [
-    { id: 0, item: "RWB 5-panel", price: "65.00", img: rwb_hat },
-    { id: 1, item: "Green 5-panel", price: "65.00", img: green_hat },
-    { id: 2, item: "Insulated 5-panel", price: "65.00", img: ins_hat },
-    { id: 3, item: "Black Hoodie", price: "75.50", img: blk_hd },
-    { id: 4, item: "Black Long Sleeve", price: "35.00", img: blk_ls },
-    { id: 5, item: "Red Short Sleeve", price: "32.00", img: red_ss },
-    { id: 6, item: "White Short Sleeve", price: "32.00", img: white_ss },
+    { id: 0, item: "RWB 5-panel", price: "65.00", img: rwb_hat, quantity: 1 },
+    {
+      id: 1,
+      item: "Green 5-panel",
+      price: "65.00",
+      img: green_hat,
+      quantity: 1,
+    },
+    {
+      id: 2,
+      item: "Insulated 5-panel",
+      price: "65.00",
+      img: ins_hat,
+      quantity: 1,
+    },
+    { id: 3, item: "Black Hoodie", price: "75.50", img: blk_hd, quantity: 1 },
+    {
+      id: 4,
+      item: "Black Long Sleeve",
+      price: "35.00",
+      img: blk_ls,
+      quantity: 1,
+    },
+    {
+      id: 5,
+      item: "Red Short Sleeve",
+      price: "32.00",
+      img: red_ss,
+      quantity: 1,
+    },
+    {
+      id: 6,
+      item: "White Short Sleeve",
+      price: "32.00",
+      img: white_ss,
+      quantity: 1,
+    },
   ];
 
   //function to switch between buttons
   function switchCartButtons(shopArray) {
+    // function helperCartObject() {
+    //   let obj = {id: sho}
+    // }
+
     if (cartArray.length === 0) {
-      return <button className="add_cart">ADD TO CART</button>;
+      return (
+        <button
+          className="add_cart"
+          onClick={() => {
+            setCartArray((cartArray) => {
+              return [...cartArray, shopArray];
+            });
+          }}
+        >
+          ADD TO CART
+        </button>
+      );
     } else {
       let variable;
       for (let i = 0; i < cartArray.length; i++) {
@@ -36,7 +81,19 @@ export default function ItemCard({ cartArray }) {
               <button className="add cart_quantity">+</button>
             </div>
           );
-        } else variable = <button className="add_cart">ADD TO CART</button>;
+        } else
+          variable = (
+            <button
+              className="add_cart"
+              onClick={() => {
+                setCartArray((cartArray) => {
+                  return [...cartArray, shopArray];
+                });
+              }}
+            >
+              ADD TO CART
+            </button>
+          );
       }
       return variable;
     }
