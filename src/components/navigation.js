@@ -29,12 +29,16 @@ export default function Navbar({ openModal, setOpenModal, color, setColor }) {
   const routeChangeShop = () => {
     let path = `/shop`;
     navigate(path);
+    setColor(true);
+    setOpenModal(false);
   };
 
   //navigate to home
   const routeChangeHome = () => {
     let path = `/`;
     navigate(path);
+    setOpenModal(false);
+    setColor(false);
   };
 
   return (

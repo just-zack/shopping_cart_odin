@@ -30,6 +30,8 @@ export default function NavbarStatic({
   const routeChangeHome = () => {
     let path = `/`;
     navigate(path);
+    setOpenModal(false);
+    setColor(false);
   };
 
   return (
