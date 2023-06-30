@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/shopping_cart_odin/static/css/main.475eaecc.css",
+    "main.js": "/shopping_cart_odin/static/js/main.9b5a8161.js",
+    "static/media/hero_bg.png": "/shopping_cart_odin/static/media/hero_bg.44017394b1c379dd8357.png",
+    "static/media/hero_cropped.png": "/shopping_cart_odin/static/media/hero_cropped.f6bc8c5ed1ee66b0bd90.png",
+    "static/media/3.png": "/shopping_cart_odin/static/media/3.d53959a273d175452704.png",
+    "static/media/second_img1.png": "/shopping_cart_odin/static/media/second_img1.74ec1386d9942c7cd64e.png",
+    "static/media/second_img2.png": "/shopping_cart_odin/static/media/second_img2.f1ba6bcfac0dc6ffbceb.png",
+    "static/media/2.png": "/shopping_cart_odin/static/media/2.545fead22797c732d796.png",
+    "static/media/4.png": "/shopping_cart_odin/static/media/4.454e0b8e1ea062eeaf05.png",
+    "static/media/1.png": "/shopping_cart_odin/static/media/1.efdeafc3b1e55fb333f2.png",
+    "static/media/5.png": "/shopping_cart_odin/static/media/5.73293b7c3d0f955f704e.png",
+    "static/media/6.png": "/shopping_cart_odin/static/media/6.231a9537a54240306d34.png",
+    "static/media/7.png": "/shopping_cart_odin/static/media/7.756805ff1212c2ef04f4.png",
+    "static/media/NPC_logo_filled.png": "/shopping_cart_odin/static/media/NPC_logo_filled.9e2a51e8137bd9040f50.png",
+    "index.html": "/shopping_cart_odin/index.html",
+    "main.475eaecc.css.map": "/shopping_cart_odin/static/css/main.475eaecc.css.map",
+    "main.9b5a8161.js.map": "/shopping_cart_odin/static/js/main.9b5a8161.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.475eaecc.css",
+    "static/js/main.9b5a8161.js"
+  ]
+}
