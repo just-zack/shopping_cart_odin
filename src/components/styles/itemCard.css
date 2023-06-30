@@ -18,7 +18,8 @@
   align-items: center;
   padding-top: 10px;
   flex-wrap: wrap;
-  width: 375px;
+  width: 350px;
+  flex: auto;
 }
 
 .item_info {
@@ -28,7 +29,8 @@
   gap: 1.5vw;
 }
 .item_image {
-  width: 375px;
+  flex: auto;
+  width: 350px;
 }
 
 .item_name {
@@ -38,6 +40,7 @@
 
 .item_price {
   font-family: "Roboto";
+  font-size: 1.2rem;
 }
 
 .add_cart {
@@ -45,7 +48,7 @@
   border: none;
   color: white;
   padding: 10px;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   transition: all;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
