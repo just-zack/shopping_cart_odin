@@ -1,17 +1,9 @@
 import React, { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./Home";
 import Shop from "./Shop";
-
-import rwb_hat from "./img/apparel_img/1.png";
-import green_hat from "./img/apparel_img/2.png";
-import ins_hat from "./img/apparel_img/3.png";
-import blk_hd from "./img/apparel_img/4.png";
-import blk_ls from "./img/apparel_img/5.png";
-import red_ss from "./img/apparel_img/6.png";
-import white_ss from "./img/apparel_img/7.png";
 
 const RouteSwitch = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -21,7 +13,7 @@ const RouteSwitch = () => {
 
   return (
     <div className="router">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route
             path="/"
@@ -55,7 +47,7 @@ const RouteSwitch = () => {
           />
         </Routes>
         <ScrollToTop />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 };
