@@ -1,7 +1,7 @@
 /*hero*/
 .hero_container {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -47,4 +47,19 @@
   color: white;
   font-size: 2.5vw;
   padding-top: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+  .hero_container {
+    background-image: url(/src/img/hero_cropped.png);
+  }
+
+  .hero--text {
+    font-size: 10vw;
+  }
+
+  .hero--subtext {
+    font-size: 5vw;
+    padding-top: 5px;
+  }
 }
